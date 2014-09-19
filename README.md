@@ -26,3 +26,8 @@ pbO = pbNotifier('zGtDxXr1EP3euf1R2q5i8GxUb3SpoOjg');
 pbO.notifier('Execution Complete')
 ```
 
+![Notification Bar Push Notification](https://raw.githubusercontent.com/lordloh/pbNotifier/res/img/NotificationBar.png "Notification Bar Push Notification")
+
+![Notification Bar Push Notification Slide](https://raw.githubusercontent.com/lordloh/pbNotifier/res/img/SlideingNotification.png "Notification Bar Push Notification Slide")
+
+![Pushbullet App](https://raw.githubusercontent.com/lordloh/pbNotifier/res/img/pushbulletApp.png "Pushbullet App")
