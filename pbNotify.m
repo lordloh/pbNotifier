@@ -24,7 +24,15 @@ classdef pbNotify
             end
         end
         function r=notify(o,message)
-            r=urlread('https://api.pushbullet.com/v2/pushes','Authentication','Basic','username',o.accessToken,'password','','timeout',35,'post',{'type','note','title',['MATLAB:',o.computer],'body',message});
+            headers(1).name= 'Access-Token';
+            headers(1).value= o.accessToken;
+            headers(2).name= 'Content-Type';
+            headers(2).value= 'application/json';
+            
+            data=['{"body":"',message,'","title":"',o.computer,...
+                '","type":"note"}'];
+            r= urlread2('https://api.pushbullet.com/v2/pushes',...
+                        'Post',data, headers);            
         end
     end
     
